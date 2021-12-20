@@ -33,7 +33,7 @@ userText.addEventListener('keyup', function(e) {
     if (e.keyCode === 13) {
         if (userText.value === c) {
             output.classList.add("correctCaptcha");
-            output.innerHTML = "Correct!";
+            output.innerHTML = "Correct! Thanks for submitting.";
         } else {
             output.classList.add("incorrectCaptcha");
             output.innerHTML = "Incorrect, please try again";
@@ -47,7 +47,7 @@ userText.addEventListener('keyup', function(e) {
 submitButton.addEventListener('click', function() {
     if (userText.value === c) {
         output.classList.add("correctCaptcha");
-        output.innerHTML = "Correct!";
+        output.innerHTML = "Correct! Thanks for submitting.";
     } else {
         output.classList.add("incorrectCaptcha");
         output.innerHTML = "Incorrect, please try again";
